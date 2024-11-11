@@ -99,22 +99,40 @@ export default function Navbar({
       {openModel && (
         <div className="w-full lg:hidden flex flex-col gap-5 py-8 pl-8">
           <ul className="flex-col items-start gap-3 ">
-            <li className="text-lg font-medium cursor-pointer  hover:text-green">
+            <li
+              onClick={() => scrollTo(heroRef)}
+              className="text-lg font-medium cursor-pointer  hover:text-green"
+            >
               Home
             </li>
-            <li className="text-lg font-medium cursor-pointer  hover:text-green">
+            <li
+              onClick={() => scrollTo(benefitRef)}
+              className="text-lg font-medium cursor-pointer  hover:text-green"
+            >
               Benefits{' '}
             </li>
-            <li className="text-lg font-medium cursor-pointer  hover:text-green">
-              How It Works
+            <li
+              onClick={() => scrollTo(makingRef)}
+              className="text-lg font-medium cursor-pointer  hover:text-green"
+            >
+              Making of EcoSmyle
             </li>
-            <li className="text-lg font-medium cursor-pointer  hover:text-green">
+            <li
+              onClick={() => scrollTo(productRef)}
+              className="text-lg font-medium cursor-pointer  hover:text-green"
+            >
               Products
             </li>
-            <li className="text-lg font-medium cursor-pointer  hover:text-green">
+            <li
+              onClick={() => scrollTo(testRef)}
+              className="text-lg font-medium cursor-pointer  hover:text-green"
+            >
               Testimonials
             </li>
-            <li className="text-lg font-medium cursor-pointer  hover:text-green">
+            <li
+              onClick={() => scrollTo(faqRef)}
+              className="text-lg font-medium cursor-pointer  hover:text-green"
+            >
               FAQ
             </li>
           </ul>
